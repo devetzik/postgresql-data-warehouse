@@ -12,4 +12,5 @@ services:
     volumes:
       - ${POSTGRES_DATA_VOLUME}:/var/lib/postgresql/data
       - ../scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ../datasets:/datasets
 networks: {}
